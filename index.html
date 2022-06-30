@@ -23,8 +23,8 @@
     <header class="header">
         <div class="conteiner">
             <a href="./index.html" lang="en" class="logo logo--header">Web<span>Studio</span></a>
-            <nav>
-                <ul class="navigation">
+            <nav class="navigation">
+                <ul class="navigation__list">
                     <li class="navigation__item navigation__current"><a
                             class="navigation__link navigation__link--current" href="./index.html">Студия</a></li>
                     <li class="navigation__item"><a class="navigation__link" href="./portfolio.html">Портфолио</a></li>
@@ -43,19 +43,38 @@
                             <use href="./image/symbol-defs.svg#smartphone"></use>
                         </svg>+38 096 111 11 11</a></li>
             </ul>
+            <button class="menu-btn">
+                <svg class="menu-btn__icon" width="40" height="40">
+                    <use href="./image/symbol-defs.svg#menu-mob-open"></use>
+                </svg>
+            </button>
+            <div class="mob-menu">
+                <button class="menu-btn">
+                    <svg class="menu-btn__icon" width="40" height="40">
+                        <use href="./image/symbol-defs.svg#menu-mob-close"></use>
+                    </svg>
+                </button>
+                <ul class="mob-navigation__list">
+                    <li class="mob-navigation__item mob-navigation__current"><a
+                            class="mob-navigation__link mob-navigation__link--current" href="./index.html">Студия</a></li>
+                    <li class="mob-navigation__item"><a class="mob-navigation__link"
+                            href="./portfolio.html">Портфолио</a></li>
+                    <li class="mob-navigation__item"><a class="mob-navigation__link" href="#">Контакты</a></li>
+                </ul>
+            </div>
         </div>
     </header>
 
     <main>
 
         <!-- Банер -->
-        <section class="banner">
+        <!-- <section class="banner">
             <h1 class="banner__title">Эффективные решения для вашего бизнеса</h1>
             <button type="button" class="button button--banner" data-modal-open>Заказать услугу</button>
-        </section>
+        </section> -->
 
         <!-- Особенности -->
-        <section class="peculiarities section">
+        <!-- <section class="peculiarities section">
             <div class="conteiner">
                 <h2 hidden>Особенности</h2>
                 <ul class="peculiarities__list">
@@ -100,10 +119,10 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
         <!-- Чем мы занимаемся -->
-        <section class="about">
+        <!-- <section class="about">
             <div class="conteiner">
                 <h2 class="about__title">Чем мы занимаемся</h2>
                 <ul class="about__list">
@@ -127,10 +146,10 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
         <!-- Наша команда -->
-        <section class="team section">
+        <!-- <section class="team section">
             <div class="conteiner">
                 <h2 class="team__title">Наша команда</h2>
                 <ul class="team__list">
@@ -276,10 +295,10 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
         <!-- Постоянные клиенты -->
-        <section class="client section">
+        <!-- <section class="client section">
             <h2 class="client__title">Постоянные клиенты</h2>
             <ul class="client__list">
                 <li class="client__item">
@@ -326,11 +345,11 @@
                 </li>
             </ul>
 
-        </section>
+        </section> -->
     </main>
 
     <!-- Футер -->
-    <footer>
+    <!-- <footer>
         <div class="conteiner footer">
             <ul class="address">
                 <li class="adress__item">
@@ -391,7 +410,7 @@
                 </form>
             </div>
         </div>
-    </footer>
+    </footer> -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal__close" data-modal-close>
