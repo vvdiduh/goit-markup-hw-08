@@ -1,0 +1,131 @@
+footer {
+    background-color: var(--background-footer);
+    padding: 60px 0;
+}
+.footer {
+    display: flex;align-items: baseline;
+}
+
+.footer .conteiner {
+    flex-direction: column;
+}
+
+
+.logo--footer {
+    margin-bottom: 20px;
+}
+
+.logo--footer span {
+    color: var(--background-main);
+}
+
+.address {
+    font-style: normal;
+    line-height: 1.71;
+    color: var(--background-main);
+    margin-right: 70px;
+}
+
+.adress__map {
+    color: var(--background-main);
+}
+
+.adress__contact {
+    line-height: 1.71;
+    color: var(--adress-contact);
+}
+
+
+.address :not(:last-child){
+    margin-bottom: 9px;
+}
+
+.address :first-child {
+    margin-bottom: 20px;
+}   
+
+.footer-soc__text {
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--background-main);
+    margin-bottom: 20px;
+}
+
+.footer-soc__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-soc__item {
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-soc__item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.footer-soc__item:hover{
+    background-color: var(--color-hover);
+}
+
+.footer-soc__link {
+    height: 20px;
+    width: 20px;
+}
+
+.footer-soc__icon{
+    fill: var(--background-main);
+}
+
+.subscription {
+    margin-left: 93px;
+}
+.subscription__form {
+    display: flex;
+}
+
+.subscription__text {
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--background-main);
+    margin-bottom: 20px;
+}
+
+.subscription__input {
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: transparent;
+    padding-left: 16px;
+    margin-right: 12px;
+    color: var(--color-secondary-text);
+}
+
+.subscription-input:focus {
+    outline: none;
+}
+
+.subscription__button {
+    height: 50px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscription__icon {
+    margin-left: 10px;
+}
