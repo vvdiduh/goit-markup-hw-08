@@ -209,6 +209,7 @@ body {
 }
 
 .mob-menu {
+  padding: 10px 0 48px 40px;
   position: fixed;
   top: 0;
   width: 100%;
@@ -229,7 +230,6 @@ body {
   width: 40px;
   background-color: transparent;
   padding: 0;
-  margin-top: 10px;
   margin-right: 15px;
 }
 
@@ -244,7 +244,6 @@ body {
 
 .mob-navigation__list {
   margin-top: 9px;
-  margin-left: 40px;
 }
 
 .mob-navigation__item:not(:last-child) {
@@ -258,10 +257,6 @@ body {
 .mob-menu__contact {
   position: absolute;
   bottom: 48px;
-}
-
-.mob-menu__contact-list {
-  margin-left: 40px;
 }
 
 .mob-menu__contact-item:not(:last-child) {
@@ -281,7 +276,6 @@ body {
 }
 
 .mob-menu__soc-list {
-  margin-left: 40px;
   display: flex;
   margin-top: 64px;
 }
@@ -390,14 +384,20 @@ body {
     padding-left: 0;
   }
 }
+.peculiarities__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 @media screen and (min-width: 1200px) {
   .peculiarities__item {
     width: 270px;
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
   .peculiarities__item:not(:last-child) {
     margin-right: 30px;
+    margin-bottom: 0;
   }
 }
 .peculiarities__icon {
@@ -538,6 +538,7 @@ body {
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   width: 100%;
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -545,6 +546,7 @@ body {
     background-color: var(--background-main);
     border-radius: 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    margin-bottom: 0;
   }
 }
 .team__item:not(:last-child) {
@@ -577,7 +579,7 @@ body {
 .team-soc__list {
   justify-content: center;
   display: flex;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 .team-soc__item {
@@ -611,8 +613,9 @@ body {
 .client__list {
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
+  margin-right: -30px;
   padding: 0 15px;
-  justify-content: space-between;
 }
 
 @media screen and (min-width: 1200px) {
@@ -821,19 +824,19 @@ body {
 footer {
   background-color: var(--background-footer);
   padding: 60px 0;
+}
+
+.footer {
+  background-color: var(--background-footer);
   text-align: center;
 }
 
-@media screen and (min-with: 12000px) {
-  footer {
-    background-color: var(--background-footer);
-    padding: 60px 0;
-  }
-}
-@media screen and (min-with: 12000px) {
+@media screen and (min-width: 1200px) {
   .footer {
+    background-color: var(--background-footer);
     display: flex;
     align-items: baseline;
+    text-align: start;
   }
 }
 .footer .conteiner {

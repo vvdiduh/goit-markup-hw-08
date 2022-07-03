@@ -19,16 +19,21 @@
     }
 }
 
+.peculiarities__item:not(:last-child) {
+    margin-bottom: 30px;
+}
 
 @media screen and (min-width: 1200px) {
     .peculiarities__item {
             width: 270px;
+            margin-bottom: 0;
         }
 }
 
 @media screen and (min-width: 1200px) {
     .peculiarities__item:not(:last-child) {
         margin-right: 30px;
+        margin-bottom: 0;
     }
 }
 
