@@ -10,6 +10,9 @@
     .client__list {
         display: flex;
         justify-content: center;
+        flex-wrap: nowrap;
+        width: 1200px;
+        margin: 0 auto;
     }
 }
 
@@ -23,9 +26,9 @@
     margin-bottom: 50px;
 }
 
+
 .client__item {
     height: 92px;
-    width: 210px;
     flex-basis: calc((100% - 60px) / 2);
     border: var(--client-color) solid 1px;
     border-radius: 4px;    

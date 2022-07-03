@@ -619,6 +619,9 @@ body {
   .client__list {
     display: flex;
     justify-content: center;
+    flex-wrap: nowrap;
+    width: 1200px;
+    margin: 0 auto;
   }
 }
 .client__title {
@@ -632,7 +635,6 @@ body {
 
 .client__item {
   height: 92px;
-  width: 210px;
   flex-basis: calc((100% - 60px) / 2);
   border: var(--client-color) solid 1px;
   border-radius: 4px;
@@ -822,6 +824,12 @@ footer {
   text-align: center;
 }
 
+@media screen and (min-with: 12000px) {
+  footer {
+    background-color: var(--background-footer);
+    padding: 60px 0;
+  }
+}
 @media screen and (min-with: 12000px) {
   .footer {
     display: flex;
