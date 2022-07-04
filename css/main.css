@@ -940,19 +940,67 @@ footer {
   background-color: var(--background-footer);
   text-align: center;
 }
-
 @media screen and (min-width: 1200px) {
   .footer {
+    max-width: 1200px;
     background-color: var(--background-footer);
     display: flex;
     align-items: baseline;
     text-align: start;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .footer.conteiner {
+    flex: none;
+  }
+}
+
 .footer .conteiner {
   flex-direction: column;
 }
 
+@media screen and (max-width: 767px) {
+  .footer__tab {
+    display: none;
+  }
+
+  .footer__desk {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .footer__mob {
+    display: none;
+  }
+
+  .footer__desk {
+    display: none;
+  }
+
+  .footer__tab {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 76px;
+    padding-right: 89px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__mob {
+    display: none;
+  }
+
+  .footer__tab {
+    display: none;
+  }
+
+  .footer__desk {
+    display: flex;
+  }
+}
 .logo--footer {
   margin-bottom: 20px;
 }
@@ -1075,7 +1123,18 @@ footer {
   color: var(--color-secondary-text);
   margin-bottom: 20px;
 }
-
+@media screen and (min-width: 768px) {
+  .subscription__input {
+    width: 450px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: transparent;
+    padding-left: 16px;
+    margin-right: 12px;
+    color: var(--color-secondary-text);
+  }
+}
 @media screen and (min-width: 1200px) {
   .subscription__input {
     width: 358px;
@@ -1088,6 +1147,7 @@ footer {
     color: var(--color-secondary-text);
   }
 }
+
 .subscription-input:focus {
   outline: none;
 }
@@ -1145,7 +1205,20 @@ footer {
   transition-duration: 700ms;
   padding: 40px;
 }
-
+@media screen and (min-width: 768px) {
+  .modal {
+    width: calc(100% - 318px);
+    height: 609px;
+    background-color: var(--background-main);
+    border-radius: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition-duration: 700ms;
+    padding: 40px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
@@ -1160,6 +1233,7 @@ footer {
     padding: 40px;
   }
 }
+
 .modal__close {
   position: absolute;
   top: 8px;

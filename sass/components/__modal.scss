@@ -9,22 +9,35 @@
     transform: translate(-50%, -50%) scale(1);
     transition-duration: 700ms;
     padding: 40px;
+
+@media screen and (min-width: 768px) {
+    width: calc(100% - 318px);
+    height: 609px;
+    background-color: var(--background-main);
+    border-radius: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition-duration: 700ms;
+    padding: 40px;
 }
-    
+
 @media screen and (min-width: 1200px) {
-    .modal {
-        width: 528px;
-        height: 581px;
-        background-color: var(--background-main);
-        border-radius: 4px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%) scale(1);
-        transition-duration: 700ms;
-        padding: 40px;
+    width: 528px;
+    height: 581px;
+    background-color: var(--background-main);
+    border-radius: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition-duration: 700ms;
+    padding: 40px;
     }
 }
+    
+
 
 
 
