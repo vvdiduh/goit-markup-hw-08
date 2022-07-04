@@ -36,23 +36,29 @@
     transition-property: border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.client__item:nth-child(-n + 4) {
-    margin-bottom: 30px;
+@media screen and (min-width: 768px) {
+    height: 92px;
+    flex-basis: calc((100% - 90px) / 3);
+    border: var(--client-color) solid 1px;
+    border-radius: 4px;
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 @media screen and (min-width: 1200px) {
-    .client__item {
-        height: 92px;
-        width: 170px;
-        border: var(--client-color) solid 1px;
-        border-radius: 4px;    
-        transition-property: border;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
+    height: 92px;
+    width: 170px;
+    border: var(--client-color) solid 1px;
+    border-radius: 4px;
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+}
+
 
 @media screen and (min-width: 1200px) {
     .client__item:not(:last-child){
