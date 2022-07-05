@@ -696,16 +696,17 @@ body {
   margin-right: -30px;
   padding: 0 15px;
 }
-
 @media screen and (min-width: 1200px) {
   .client__list {
+    max-width: 1200px;
     display: flex;
     justify-content: center;
     flex-wrap: nowrap;
-    width: 1200px;
     margin: 0 auto;
+    gap: 0;
   }
 }
+
 .client__title {
   font-weight: 700;
   font-size: 36px;
