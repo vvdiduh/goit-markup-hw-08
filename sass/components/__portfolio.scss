@@ -1,5 +1,5 @@
 .portfolio {
-    padding: 94px 15px;
+    padding: 60px 0;
 
 @media screen and (min-width: 768px) {
     padding: 94px 0;
@@ -94,15 +94,40 @@
     letter-spacing: 0.03em;
     display: flex;
     align-items: center;
-    padding: 0 24px;
+    padding: 77px 24px;
     transform: translateY(100%);
     transition-property: transform;
     transition-duration: 250ms;
     transition-duration: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 1200px) {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        background-color: rgba(33, 150, 243, 0.9);
+        color: var(--background-main);
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.56;
+        letter-spacing: 0.03em;
+        display: flex;
+        align-items: center;
+        padding: 0 24px;
+        transform: translateY(100%);
+        transition-property: transform;
+        transition-duration: 250ms;
+        transition-duration: cubic-bezier(0.4, 0, 0.2, 1);
+    }
 }
 
 .about-work__text:hover {
     top: 0;
+}
+
+.portfolio__img {
+    width: 100%;
+    max-width: 450px;
 }
 
 .border {
