@@ -74,8 +74,8 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     display: block;
-    margin-bottom: 10px;
     padding-left: 35px;
+    margin-top: 4px;
 }
 
 .modal__imput:focus{
@@ -88,13 +88,13 @@
     cursor: pointer;
 }
 
-.modal-lable {
+.modal__lable {
     font-weight: 400;
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
     display: block;
-    margin-bottom: 4px;
+    margin-top: 10px;
 }
 
 .modal__wrap {
@@ -121,6 +121,8 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     resize: none;
+    display: block;
+    margin-top: 4px;
 }
 
 .user-comment:hover {
@@ -136,7 +138,6 @@
 
 .contract-check {
     margin-top: 20px;
-    margin-bottom: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -187,6 +188,7 @@
     border-radius: 4px;
     border-color: transparent;
     margin: 0 auto;
+    margin-top: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
