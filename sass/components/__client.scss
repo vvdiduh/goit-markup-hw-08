@@ -5,6 +5,7 @@
     gap: 30px;
     margin-right: -30px;
     padding: 0 15px;
+    width: 100%;
 
 @media screen and (min-width: 1200px) {
     max-width: 1200px;
@@ -31,7 +32,7 @@
 
 .client__item {
     height: 92px;
-    flex-basis: calc((100% - 60px) / 2);
+    flex-basis: calc((100% - 30px) / 2);
     border: var(--client-color) solid 1px;
     border-radius: 4px;    
     transition-property: border;
@@ -40,7 +41,7 @@
 
 @media screen and (min-width: 768px) {
     height: 92px;
-    flex-basis: calc((100% - 90px) / 3);
+    flex-basis: calc((100% - 60px) / 3);
     border: var(--client-color) solid 1px;
     border-radius: 4px;
     transition-property: border;
