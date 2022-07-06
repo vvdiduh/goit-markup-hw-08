@@ -38,6 +38,7 @@
     padding-left: 15px;
     padding-right: 15px;
     /* outline: 1px solid rgb(255, 0, 0); */
+    justify-content: center;
 }
 }
 
@@ -145,7 +146,8 @@
 
 @media screen and (min-width:768px) {
     display: flex;
-    flex-wrap: wrap;   
+    flex-wrap: wrap;  
+    flex-direction: column;
 }
 
 @media screen and (min-width:1200px) {
