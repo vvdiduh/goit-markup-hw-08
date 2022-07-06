@@ -1,12 +1,19 @@
 .section {
     padding: 60px 0;
-}
+
+@media screen and (min-width: 768px) {
+        .section {
+            padding: 60px 15px;
+            margin: 0 auto;
+        }
+    }
 
 @media screen and (min-width: 1200px) {
-    .section {
             padding: 94px 0;
-        }
+    }
 }
+
+
 
 .peculiarities__list {
     padding: 0 15px;
@@ -17,6 +24,7 @@
     gap: 30px;
     margin-right: -30px;
     padding: 0;
+    width: 100%;
     justify-content: center;
 }
 

@@ -83,6 +83,7 @@
         font-weight: 500;
         line-height: 1.14;
         letter-spacing: 0.02em;
+        margin-right: 84px;
     }
 }
 
@@ -144,8 +145,7 @@
 
 @media screen and (min-width:768px) {
     display: flex;
-    flex-wrap: wrap;
-    margin-left: 84px;    
+    flex-wrap: wrap;   
 }
 
 @media screen and (min-width:1200px) {
@@ -164,7 +164,8 @@
     margin-right: 50px;
 
 @media screen and (min-width:768px) and (max-width:1200px) {
-    margin-bottom: 10px;    
+    margin-bottom: 10px;  
+    margin-right: 0;  
 }
 }
 
