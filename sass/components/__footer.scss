@@ -55,9 +55,11 @@ footer {
 
     .footer__tab {
         display: flex;
+        width: 768px;
         justify-content: space-between;
         padding-left: 76px;
         padding-right: 89px;
+        margin: 0 auto;
     }
 }
 
